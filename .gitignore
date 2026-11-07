@@ -1,3 +1,24 @@
 .ipynb_checkpoints/
 __pycache__/
 .DS_Store
+data/
+
+# Data unduhan (dibutuhkan lokal, tidak di-commit)
+assignment-02-autoregressive/input.txt
+*.npz
+assignment-04-style-transfer/*.jpg
+
+# Hasil running notebook (dibuat ulang otomatis saat notebook dijalankan)
+assignment-05-vae/conv_ae/
+assignment-05-vae/conv_vae/
+assignment-05-vae/*.png
+assignment-05-vae/*.gif
+assignment-05-vae/ae_encoder
+assignment-05-vae/ae_decoder
+assignment-05-vae/conv_autoencoder
+assignment-05-vae/vae_encoder
+assignment-05-vae/vae_model
+assignment-06-gan/v_gan/
+assignment-06-gan/ls_gan/
+assignment-06-gan/dc_gan/
+*.ipynb.tmp
