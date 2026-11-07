@@ -22,3 +22,11 @@ assignment-06-gan/v_gan/
 assignment-06-gan/ls_gan/
 assignment-06-gan/dc_gan/
 *.ipynb.tmp
+
+# Hasil running assignment-06 (gif & diagram model)
+assignment-06-gan/*.gif
+assignment-06-gan/*.png
+assignment-06-gan/model_d
+assignment-06-gan/model_d2
+assignment-06-gan/model_g
+assignment-06-gan/model_g2
