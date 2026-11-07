@@ -1,0 +1,82 @@
+[
+  {
+    "id": "S5yg44U8cZzk",
+    "label": "Identitas (NIM/Nama)"
+  },
+  {
+    "id": "hsZYqgngcZzY",
+    "label": "Import libraries"
+  },
+  {
+    "id": "M6CRZOKM34PX",
+    "label": "GPU setup"
+  },
+  {
+    "id": "AUTOGRADESEED01",
+    "label": "Cell seed (NIM)"
+  },
+  {
+    "id": "-EzaGOLbybm0",
+    "label": "Part 1.1 - flatten()"
+  },
+  {
+    "id": "vc2omX323gNX",
+    "label": "Part 1.1 - sanity check flatten()"
+  },
+  {
+    "id": "oxvoCFA-ybm7",
+    "label": "Part 1.2 - two_layer_network()"
+  },
+  {
+    "id": "GB8jNW9-ybnD",
+    "label": "Part 1.2 - sanity check two_layer_network()"
+  },
+  {
+    "id": "6--NJep1OlQf",
+    "label": "Part 1.3 - three_layer_convnet() (barebone)"
+  },
+  {
+    "id": "zeCsOGZ0ybnS",
+    "label": "Part 1.3 - sanity check three_layer_convnet() (barebone)"
+  },
+  {
+    "id": "zq91fkiMybnY",
+    "label": "Part 1.4 - random_weight()"
+  },
+  {
+    "id": "DIVp1QT7ybni",
+    "label": "Part 1.5 - check_accuracy()"
+  },
+  {
+    "id": "nrpKmIWcybn2",
+    "label": "Part 1.6 - train()"
+  },
+  {
+    "id": "VpJK1mtOyboN",
+    "label": "Part 3.1 - TwoLayerFC"
+  },
+  {
+    "id": "F3XIAfIPyboc",
+    "label": "Part 3.1 - sanity check TwoLayerFC"
+  },
+  {
+    "id": "Tftq5zDsPW-g",
+    "label": "Part 3.2 - ThreeLayerConvNet (Module API)"
+  },
+  {
+    "id": "y3oRhRUUybos",
+    "label": "Part 3.2 - sanity check ThreeLayerConvNet"
+  },
+  {
+    "id": "d7dcau7Yybow",
+    "label": "Part 3.3 - check_accuracy_module()"
+  },
+  {
+    "id": "G5kfS2zkyboz",
+    "label": "Part 3.4 - train_module()"
+  },
+  {
+    "id": "gOPm-QQIybpC",
+    "label": "Part 4.1 - Flatten (Sequential wrapper)"
+  }
+]

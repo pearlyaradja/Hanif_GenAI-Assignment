@@ -1,0 +1,230 @@
+[
+  {
+    "id": "S5yg44U8cZzk",
+    "label": "Identitas (NIM/Nama)"
+  },
+  {
+    "id": "AUTOGRADESEED06",
+    "label": "Cell seed (NIM)"
+  },
+  {
+    "id": "101E2MFquP0u",
+    "label": "Install torchinfo/graphviz/torchview"
+  },
+  {
+    "id": "gyI_HVN-ctSk",
+    "label": "Import libraries"
+  },
+  {
+    "id": "HkAsz5K2ktMh",
+    "label": "GPU/CPU device setup"
+  },
+  {
+    "id": "DMk4OSViBqLw",
+    "label": "NUM_TRAIN/NUM_VAL/NOISE_DIM/batch_size setup"
+  },
+  {
+    "id": "1WDxga1fAH78",
+    "label": "ChunkSampler"
+  },
+  {
+    "id": "GVnqvs6kctTD",
+    "label": "Load MNIST dataset + DataLoader"
+  },
+  {
+    "id": "qWOvhJih6NBa",
+    "label": "Download gan-checks.npz"
+  },
+  {
+    "id": "Cibe7q9j-1Xz",
+    "label": "show_images()"
+  },
+  {
+    "id": "8n4LrFmsctTK",
+    "label": "Preview MNIST sample"
+  },
+  {
+    "id": "C0GotRAlctS7",
+    "label": "preprocess_img()/deprocess_img()"
+  },
+  {
+    "id": "ERU1IUcnctTP",
+    "label": "sample_noise()"
+  },
+  {
+    "id": "s3JbrAxiGuT1",
+    "label": "initialize_weights()"
+  },
+  {
+    "id": "KQN7GSth_wMc",
+    "label": "rel_error()"
+  },
+  {
+    "id": "JVzQVK3qA2RY",
+    "label": "clean_summary()"
+  },
+  {
+    "id": "jOFuzDwAUxVL",
+    "label": "show_gif()"
+  },
+  {
+    "id": "3-Q5pNC-ctTl",
+    "label": "discriminator()"
+  },
+  {
+    "id": "JwEkkvjqctTp",
+    "label": "Instantiate discriminator (param count check)"
+  },
+  {
+    "id": "EwJSDv_SD4dH",
+    "label": "Visualize discriminator graph"
+  },
+  {
+    "id": "Z9w7kgrgctTu",
+    "label": "generator()"
+  },
+  {
+    "id": "93m7E-S1ctTz",
+    "label": "Instantiate generator (param count check)"
+  },
+  {
+    "id": "nO_F4gL_T_LI",
+    "label": "Visualize generator graph"
+  },
+  {
+    "id": "PvKOijguctT7",
+    "label": "criterion (BCEWithLogitsLoss)"
+  },
+  {
+    "id": "fuUxbbCHctUA",
+    "label": "discriminator_loss()"
+  },
+  {
+    "id": "Y0N3ysHictUC",
+    "label": "Test discriminator_loss() vs gan-checks.npz"
+  },
+  {
+    "id": "Q74gPc5_ctUI",
+    "label": "generator_loss()"
+  },
+  {
+    "id": "XWL-jEPkctUK",
+    "label": "Test generator_loss() vs gan-checks.npz"
+  },
+  {
+    "id": "LQwnHpxfctUO",
+    "label": "get_optimizer()"
+  },
+  {
+    "id": "PMxGHFZxctUT",
+    "label": "train_gan()"
+  },
+  {
+    "id": "AUTOGRADECHECK06",
+    "label": "Sanity check 1 iterasi training GAN (bobot personalisasi NIM)"
+  },
+  {
+    "id": "u_j_q7zryZSU",
+    "label": "Make Vanilla GAN D/G (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "Sqpv9waRctUb",
+    "label": "ls_discriminator_loss()"
+  },
+  {
+    "id": "DeGEoK9sctUe",
+    "label": "Test ls_discriminator_loss() vs gan-checks.npz"
+  },
+  {
+    "id": "Pl4n6HxActUi",
+    "label": "ls_generator_loss()"
+  },
+  {
+    "id": "HzrX73H-ctUl",
+    "label": "Test ls_generator_loss() vs gan-checks.npz"
+  },
+  {
+    "id": "z3VT7WlLzSrL",
+    "label": "Make LS-GAN D/G (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "rafpCGIcctUs",
+    "label": "dc_discriminator()"
+  },
+  {
+    "id": "3bqcnFp-O5li",
+    "label": "Instantiate dc_discriminator (param count check)"
+  },
+  {
+    "id": "jp6l36-72cdb",
+    "label": "Visualize dc_discriminator graph"
+  },
+  {
+    "id": "HjEFnznFctUz",
+    "label": "dc_generator()"
+  },
+  {
+    "id": "fiGZ8aDkkJff",
+    "label": "Instantiate dc_generator (param count check)"
+  },
+  {
+    "id": "Emdvt_NP5al4",
+    "label": "Visualize dc_generator graph"
+  },
+  {
+    "id": "FDPhUyxE5lJc",
+    "label": "Make DC-GAN D/G (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "RPrfTFL4ctVA",
+    "label": "Buat fake_seed contoh"
+  },
+  {
+    "id": "y_aHbw-qctVC",
+    "label": "Print fake_seed[0]"
+  },
+  {
+    "id": "GiWSU7jvctVG",
+    "label": "Vanilla GAN - generate images (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "GYbWFbXgctVI",
+    "label": "Vanilla GAN - show_images (sanity)"
+  },
+  {
+    "id": "K8pOUYJp-Mu4",
+    "label": "Buat single_seed contoh (Vanilla)"
+  },
+  {
+    "id": "2VZ_7D0_ctVK",
+    "label": "LS-GAN - generate images (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "KbnmH9nVctVN",
+    "label": "LS-GAN - show_images (sanity)"
+  },
+  {
+    "id": "foBcItTj-THv",
+    "label": "Buat single_seed contoh (LS-GAN)"
+  },
+  {
+    "id": "Rscjlgg3ctVQ",
+    "label": "DC-GAN - generate images (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "3V7y5ygqctVR",
+    "label": "DC-GAN - show_images (sanity)"
+  },
+  {
+    "id": "4Q9UguU1Q2kX",
+    "label": "Load batch gambar asli MNIST untuk perbandingan"
+  },
+  {
+    "id": "SHgfHD9vIN-z",
+    "label": "Gabung gambar generated + real (sanity)"
+  },
+  {
+    "id": "Mlu1Ea43Nxco",
+    "label": "Plot grid gabungan dengan label (sanity)"
+  }
+]

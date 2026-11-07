@@ -1,0 +1,75 @@
+name: Check Submission
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-submission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    strategy:
+      fail-fast: false
+      matrix:
+        # Tambahkan folder assignment baru ke daftar ini kalau dosen menambah tugas
+        assignment:
+          - assignment-01-convnet
+          - assignment-02-autoregressive
+          - assignment-03-network-viz
+          - assignment-04-style-transfer
+          - assignment-05-vae
+          - assignment-06-gan
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Cek struktur dulu (cepat, tanpa dependency) - kalau gagal, step di bawah
+      # otomatis tidak dijalankan (hemat waktu & kuota Actions untuk submission
+      # yang jelas belum selesai).
+      - name: Check structure (placeholder & identitas)
+        run: python3 check_structure.py ${{ matrix.assignment }}
+
+      - name: Setup Python
+        if: success()
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        if: success()
+        run: |
+          # graphviz binary (dot) dibutuhkan torchview untuk render diagram arsitektur
+          # (assignment-05-vae dst.) - paket pip "graphviz" cuma wrapper Python-nya.
+          sudo apt-get update -y && sudo apt-get install -y graphviz
+          python -m pip install --upgrade pip
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+
+      # Quick check: jalankan cell "murah" (definisi fungsi + sanity check bawaan
+      # notebook yang dijamin instruktur jalan cepat) untuk verifikasi exercise
+      # Anda BENAR secara fungsional - bukan cuma placeholder sudah terisi.
+      # Training/download penuh TIDAK dijalankan di sini (dilewati), supaya cepat
+      # dan hemat kuota Actions. Lihat README untuk detail.
+      - name: Quick check (verifikasi exercise berjalan benar)
+        if: success()
+        run: python3 quick_check.py ${{ matrix.assignment }}
+
+      - name: Post summary
+        if: always()
+        run: |
+          echo "## Hasil cek - ${{ matrix.assignment }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "1. **Cek struktur**: placeholder '??' & identitas terisi." >> "$GITHUB_STEP_SUMMARY"
+          echo "2. **Quick check**: exercise dijalankan dengan versi ringan (bukan training penuh) untuk cek logika benar." >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Keduanya BUKAN nilai akhir.** Akurasi/loss sesungguhnya dinilai terpisah secara batch oleh dosen setelah tenggat." >> "$GITHUB_STEP_SUMMARY"

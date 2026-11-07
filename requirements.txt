@@ -1,0 +1,14 @@
+nbclient
+nbformat
+ipykernel
+numpy
+matplotlib
+tabulate
+transformers
+seaborn
+scipy
+pillow
+imageio
+torchinfo
+torchview
+graphviz

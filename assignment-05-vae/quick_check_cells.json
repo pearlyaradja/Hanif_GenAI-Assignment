@@ -1,0 +1,182 @@
+[
+  {
+    "id": "S5yg44U8cZzk",
+    "label": "Identitas (NIM/Nama)"
+  },
+  {
+    "id": "AUTOGRADESEED05",
+    "label": "Cell seed (NIM)"
+  },
+  {
+    "id": "101E2MFquP0u",
+    "label": "Install torchinfo/graphviz/torchview"
+  },
+  {
+    "id": "cP16VLL2cb6o",
+    "label": "Import libraries"
+  },
+  {
+    "id": "IuAO8yJJvLBy",
+    "label": "GPU/CPU device setup"
+  },
+  {
+    "id": "obPzmoTKcdbP",
+    "label": "Load MNIST dataset"
+  },
+  {
+    "id": "rXDB5KxW-jEX",
+    "label": "clean_summary()"
+  },
+  {
+    "id": "2M-Ut2-ico2r",
+    "label": "plot_latent_space()"
+  },
+  {
+    "id": "BSxQxNC8fbi6",
+    "label": "generate_image()"
+  },
+  {
+    "id": "it9d_KXYco2z",
+    "label": "plot_interpolating()"
+  },
+  {
+    "id": "_GcWbmKyVfO2",
+    "label": "save_epoch_image()"
+  },
+  {
+    "id": "CckNpCdeWwUR",
+    "label": "plot_loss()"
+  },
+  {
+    "id": "jOFuzDwAUxVL",
+    "label": "show_gif()"
+  },
+  {
+    "id": "daKRTjkRco1-",
+    "label": "ConvAE_Encoder"
+  },
+  {
+    "id": "2vd2Jci1fiWC",
+    "label": "Instantiate ae_encoder"
+  },
+  {
+    "id": "EwJSDv_SD4dH",
+    "label": "Visualize ae_encoder graph"
+  },
+  {
+    "id": "dpSyfO_Kco2F",
+    "label": "ConvAE_Decoder"
+  },
+  {
+    "id": "BRAanLi7fjOw",
+    "label": "Instantiate ae_decoder"
+  },
+  {
+    "id": "91LRuKsYEEJt",
+    "label": "Visualize ae_decoder graph"
+  },
+  {
+    "id": "Q-1fnu-1co2M",
+    "label": "ConvolutionalAutoencoder"
+  },
+  {
+    "id": "HwFOid-8EP4T",
+    "label": "Instantiate ae_model"
+  },
+  {
+    "id": "ABl0yCHkQ8_Z",
+    "label": "Visualize ae_model graph"
+  },
+  {
+    "id": "_qyMiVleco2k",
+    "label": "train_model()"
+  },
+  {
+    "id": "IxzT2Gdcco2u",
+    "label": "AE - plot_latent_space (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "ckivKIeUHtif",
+    "label": "AE - reconstructed images (sanity)"
+  },
+  {
+    "id": "6ITBoNbjeHUI",
+    "label": "AE - generate_image z(-1,1) (sanity)"
+  },
+  {
+    "id": "izZWRt2E3I93",
+    "label": "AE - generate_image z(-5,5) (sanity)"
+  },
+  {
+    "id": "2oIlnYH1ekva",
+    "label": "AE - generate single image (sanity)"
+  },
+  {
+    "id": "CbqFYuLRco22",
+    "label": "AE - plot_interpolating n=10 (sanity)"
+  },
+  {
+    "id": "QBj_cDV6hhUo",
+    "label": "AE - plot_interpolating n=20 (sanity)"
+  },
+  {
+    "id": "AvtgKOdVgpXj",
+    "label": "VAE_Encoder"
+  },
+  {
+    "id": "tYZuDR-zi9VJ",
+    "label": "Instantiate vae_encoder"
+  },
+  {
+    "id": "n8XGLD7Xi9VT",
+    "label": "Visualize vae_encoder graph"
+  },
+  {
+    "id": "dNRCC2SkjLzI",
+    "label": "Instantiate vae_decoder"
+  },
+  {
+    "id": "zSPlY7opoRs8",
+    "label": "VariationalAutoencoder"
+  },
+  {
+    "id": "LhuNwFTFj8w8",
+    "label": "Instantiate vae_model"
+  },
+  {
+    "id": "rzPOrYV7S9kJ",
+    "label": "Visualize vae_model graph"
+  },
+  {
+    "id": "KDZoXcRuit0s",
+    "label": "vae_loss_function()"
+  },
+  {
+    "id": "AUTOGRADECHECK05",
+    "label": "Sanity check forward pass VAE + loss (bobot personalisasi NIM)"
+  },
+  {
+    "id": "YZXBcOt2vfza",
+    "label": "VAE - plot_latent_space (sanity, bobot belum dilatih)"
+  },
+  {
+    "id": "y4BvOfShvoUT",
+    "label": "VAE - generate_image z(-1,1) (sanity)"
+  },
+  {
+    "id": "FRME7oCVOPeL",
+    "label": "VAE - generate_image z(-5,5) (sanity)"
+  },
+  {
+    "id": "462RacFDvoUX",
+    "label": "VAE - generate single image (sanity)"
+  },
+  {
+    "id": "MsIx4Zh4voUc",
+    "label": "VAE - plot_interpolating n=10 (sanity)"
+  },
+  {
+    "id": "BfoD4trSvoUg",
+    "label": "VAE - plot_interpolating n=20 (sanity)"
+  }
+]

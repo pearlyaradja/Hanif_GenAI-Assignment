@@ -1,0 +1,90 @@
+[
+  {
+    "id": "S5yg44U8cZzk",
+    "label": "Identitas (NIM/Nama)"
+  },
+  {
+    "id": "F2s9tmfkhhTu",
+    "label": "Import libraries"
+  },
+  {
+    "id": "AUTOGRADESEED03",
+    "label": "Cell seed (NIM)"
+  },
+  {
+    "id": "M6CRZOKM34PX",
+    "label": "GPU setup"
+  },
+  {
+    "id": "5t1E3E9MwZO-",
+    "label": "preprocess()"
+  },
+  {
+    "id": "90RVUlwswvkv",
+    "label": "deprocess()"
+  },
+  {
+    "id": "ueEXSBg3hhT4",
+    "label": "blur_image()"
+  },
+  {
+    "id": "FbkK2G9zkM2J",
+    "label": "Download sample ImageNet validation"
+  },
+  {
+    "id": "A4NM6OwQhhUR",
+    "label": "load_imagenet_val()"
+  },
+  {
+    "id": "uuEUYtoZSyIb",
+    "label": "Load sample images"
+  },
+  {
+    "id": "Vw568akRhhUL",
+    "label": "Load pretrained SqueezeNet"
+  },
+  {
+    "id": "wF7oWrJpNVED",
+    "label": "Freeze model parameters"
+  },
+  {
+    "id": "aHIDSU9xhhUg",
+    "label": "gather_example() - contoh gather()"
+  },
+  {
+    "id": "J2R5Qi1ChhUl",
+    "label": "Jalankan gather_example()"
+  },
+  {
+    "id": "I9y0PoRLhhUq",
+    "label": "Part 2 - compute_saliency_maps()"
+  },
+  {
+    "id": "UWQezGkYhhUw",
+    "label": "Part 2 - hitung saliency map"
+  },
+  {
+    "id": "AUTOGRADECHECK03A",
+    "label": "Part 2 - sanity check saliency map"
+  },
+  {
+    "id": "_bYYXiHUhhU0",
+    "label": "jitter()"
+  },
+  {
+    "id": "mKo65gcBhhU5",
+    "label": "Part 3 - create_class_visualization()"
+  },
+  {
+    "id": "AUTOGRADECHECK03B",
+    "label": "Part 3 - sanity check create_class_visualization() (2 iterasi)"
+  },
+  {
+    "id": "lLsi-_FjhhVH",
+    "label": "Part 4 - make_fooling_image()"
+  },
+  {
+    "id": "J7Z6yyyXhhVL",
+    "label": "Part 4 - jalankan fooling image & verifikasi anti-cheat"
+  }
+]
